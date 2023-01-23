@@ -12,6 +12,8 @@ import GyroscopePage from "./pages/sensors/GyroscopePage"
 import NetworkPage from "./pages/sensors/NetworkPage"
 import ProximityPage from "./pages/sensors/ProximityPage"
 import StoragePage from "./pages/sensors/StoragePage"
+import Stream from "./pages/stream/index.page"
+import JoinStream from "./pages/stream/[USER_ID].page"
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
   {
     path: "/sensors/proximity",
     element: <ProximityPage />,
+  },
+  {
+    path: "/stream",
+    element: <Stream />,
+  },
+  {
+    path: "/stream/:ROOM_ID",
+    element: <JoinStream />,
   },
 ])
 
