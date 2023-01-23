@@ -161,12 +161,12 @@ const GyroscopeComponent = () => {
         <Layout>
             <div className="container-xxl">
                 <div className="fw-bold text-uppercase mb-8 text-center mt-4 fs-1">Gyroscope</div>
-                <div className="container text-center">
+              <div className="container text-center mt-4">
+                <canvas id="myChart" className="chart"></canvas>
+              </div>
+              <div className="container text-center mt-5">
                     <Link to="/sensors/proximity" type="button" className="btn btn-outline-success mb-5 btn-lg" style={{ width: "150px", height: "50px" }}>Next</Link>
                 </div>
-            </div>
-            <div>
-                <canvas id="myChart" width={350} height={350}></canvas>
             </div>
         </Layout>
   )
