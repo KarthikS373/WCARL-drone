@@ -31,6 +31,11 @@ const Navbar = () => {
                 Check my Device
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/stream" className="nav-link" aria-current="page">
+                Stream
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
